@@ -1,6 +1,5 @@
-// --- Configuração das fotos e vídeos ---
+
 const images = [
-  "fotos/WhatsApp Image 2025-10-14 at 11.07.34 (1).jpeg",
   "fotos/whatsApp Image 2025-10-14 at 11.07.34 (2).jpeg",
   "fotos/whatsApp Image 2025-10-14 at 11.07.34 (3).jpeg",
   "fotos/whatsApp Image 2025-10-14 at 11.07.34 (4).jpeg",
@@ -9,13 +8,13 @@ const images = [
   "fotos/whatsApp Image 2025-10-14 at 11.45.55 (3).jpeg",
   "fotos/whatsApp Image 2025-10-14 at 11.45.54.jpeg",
   "fotos/WhatsApp Image 2025-10-14 at 11.45.55 (2).jpeg",
+  "fotos/WhatsApp Image 2025-10-14 at 11.51.32 (1).jpeg",
 ];
 
 const videos = [
   "WhatsApp Video 2025-10-14 at 12.37.17.mp4"
 ];
 
-// --- Galeria de fotos ---
 const gallery = document.getElementById("gallery");
 images.forEach(src => {
   const card = document.createElement("div");
@@ -27,7 +26,7 @@ images.forEach(src => {
   gallery.appendChild(card);
 });
 
-// --- Galeria de vídeos ---
+
 const videosDiv = document.getElementById("videos");
 videos.forEach(src => {
   const card = document.createElement("div");
@@ -39,7 +38,7 @@ videos.forEach(src => {
   videosDiv.appendChild(card);
 });
 
-// --- Música de fundo ---
+
 const bgMusic = document.getElementById("bgMusic");
 const playBtn = document.getElementById("playMusic");
 let isPlaying = false;
